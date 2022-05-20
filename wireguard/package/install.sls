@@ -10,7 +10,11 @@ wireguard-package-install-repo-{{ repo_name }}:
   pkgrepo.managed:
     - name: {{ repo_name }}
     {%- for key, value in repo.items() %}
+      {%- if value is string %}
+    - {{ key }}: {{ value | replace('\n', '') }}
+      {%- else %}
     - {{ key }}: {{ value }}
+      {%- endif %}
     {%- endfor %}
 {%- endfor %}
 
