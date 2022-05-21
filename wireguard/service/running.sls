@@ -17,9 +17,14 @@ wireguard-service-running-service-running-{{ interface }}:
   service.running:
     - name: {{ wireguard.service.name }}@{{ interface }}
     - enable: True
-    - watch:
-      - sls: {{ sls_config_file }}
+
+wireguard-service-running-sync-conf-{{ interface }}":
+  cmd.run:
+    - name: wg syncconf {{ interface }} <(wg-quick strip {{ interface }})
+    - onchanges:
       - file: wireguard-config-file-interface-{{ interface }}-config
+    - require:
+      - wireguard-service-running-service-running-{{ interface }}
 {%-   endfor %}
 {%- endif %}
 
