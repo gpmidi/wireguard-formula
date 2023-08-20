@@ -24,14 +24,6 @@ Fedora-38:
   name: wireguard-tools
 Fedora-37:
   name: wireguard-tools
-Fedora-36:
-  name: wireguard-tools
-Fedora-35:
-  name: wireguard-tools
-Fedora-34:
-  name: wireguard-tools
-Fedora-33: {}
-Fedora-32: {}
 Fedora-31: {}
 Fedora-30: {}
 
