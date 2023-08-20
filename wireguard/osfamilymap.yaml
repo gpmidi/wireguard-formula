@@ -49,6 +49,4 @@ Windows: {}
 
 MacOS: {}
 
-Fedora:
-  pkg:
-    name: wireguard-utils
+Fedora: {}
