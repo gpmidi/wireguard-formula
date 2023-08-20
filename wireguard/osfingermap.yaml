@@ -21,13 +21,15 @@ Ubuntu-16.04: {}
 
 # os: Fedora
 Fedora-38:
-  pkgs:
-    wireguard-tools: {}
-    wgctrl: {}
-Fedora-37: {}
-Fedora-36: {}
-Fedora-35: {}
-Fedora-34: {}
+  name: wireguard-tools
+Fedora-37:
+  name: wireguard-tools
+Fedora-36:
+  name: wireguard-tools
+Fedora-35:
+  name: wireguard-tools
+Fedora-34:
+  name: wireguard-tools
 Fedora-33: {}
 Fedora-32: {}
 Fedora-31: {}
