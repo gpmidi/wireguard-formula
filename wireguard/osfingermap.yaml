@@ -20,7 +20,10 @@ Ubuntu-18.04: {}
 Ubuntu-16.04: {}
 
 # os: Fedora
-Fedora-38: {}
+Fedora-38:
+  pkgs:
+    wireguard-tools: {}
+    wgctrl: {}
 Fedora-37: {}
 Fedora-36: {}
 Fedora-35: {}
