@@ -20,6 +20,13 @@ Ubuntu-18.04: {}
 Ubuntu-16.04: {}
 
 # os: Fedora
+Fedora-38: {}
+Fedora-37: {}
+Fedora-36: {}
+Fedora-35: {}
+Fedora-34: {}
+Fedora-33: {}
+Fedora-32: {}
 Fedora-31: {}
 Fedora-30: {}
 
