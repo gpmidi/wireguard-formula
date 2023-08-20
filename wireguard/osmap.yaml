@@ -19,7 +19,7 @@ Raspbian: {}
 # os_family: RedHat
 Fedora:
   pkg:
-    name: wireguard-fedora
+    name: wireguard-utils
   service:
     name: service-fedora
 
